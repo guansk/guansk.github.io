@@ -203,15 +203,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2022-02-17T16:40:53+08:00"
+              datetime="2022-02-17T22:38:53+08:00"
               content="2022-02-17">
           02-17
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2022/02/17/Python%E6%90%AD%E9%85%8Dyoutube-dl%E4%B8%8B%E8%BD%BD%E6%B2%B9%E7%AE%A1%E8%A7%86%E9%A2%91/" itemprop="url">
-            <span itemprop="name">Python搭配youtube-dl下载油管视频</span>
+          <a class="post-title-link" href="/2022/02/17/Python%E8%B0%83%E7%94%A8Motrix%E9%AB%98%E9%80%9F%E4%B8%8B%E8%BD%BD/" itemprop="url">
+            <span itemprop="name">Python调用Motrix高速下载</span>
           </a>
       </div>
 
@@ -223,15 +223,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2022-02-17T10:38:53+08:00"
+              datetime="2022-02-17T16:40:53+08:00"
               content="2022-02-17">
           02-17
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2022/02/17/Python%20%E6%90%AD%E9%85%8D%20Aria2%E8%BF%9B%E8%A1%8C%E4%B8%8B%E8%BD%BD/" itemprop="url">
-            <span itemprop="name">Python 调用 Motrix 进行下载</span>
+          <a class="post-title-link" href="/2022/02/17/Python%E6%90%AD%E9%85%8Dyoutube-dl%E4%B8%8B%E8%BD%BD%E6%B2%B9%E7%AE%A1%E8%A7%86%E9%A2%91/" itemprop="url">
+            <span itemprop="name">Python搭配youtube-dl下载油管视频</span>
           </a>
       </div>
 
@@ -437,15 +437,33 @@
 
   
 
+
 <script>
-  function loadCount() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://guansk.disqus.com/count.js';
-    s.id = 'dsq-count-scr';
-    (d.head || d.body).appendChild(s);
-  }
-  // defer loading until the whole page loading is completed
-  window.addEventListener('load', loadCount, false);
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : '6geymy3fRvXrIhRAAlAh8c1t-gzGzoHsz',
+      appKey     : 'lu1lzb8yc2WEzBjJiX6ii8Ue',
+      placeholder: "Just go go",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
 </script>
 
 </body>
