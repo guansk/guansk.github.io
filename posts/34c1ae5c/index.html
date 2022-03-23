@@ -22,28 +22,39 @@
     var CONFIG = {"hostname":"www.guansk.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Guansk博客">
-<meta property="og:url" content="https://www.guansk.com/index.html">
+  <meta name="description" content="翻译自Dave Bryant文章，如侵权请联系删除。  对亚马逊卖家来说，最令人担忧的时刻之一是当他们面临潜在的库存中断时。当产品真的回来时，这些断货对搜索排名会有什么影响？排名会恢复到原来的位置还是会下降？在这篇文章中，我们将研究断货对众多ASIN的影响，看看断货前后的表现，并尝试确定断货的效果。 内容 断货前后的表现  对结果的解释  为什么卖家认为库存耗尽会影响业绩？  缺货是否永远影响产">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ASIN缺货对亚马逊产品排名的影响">
+<meta property="og:url" content="https://www.guansk.com/posts/34c1ae5c/index.html">
 <meta property="og:site_name" content="Guansk博客">
+<meta property="og:description" content="翻译自Dave Bryant文章，如侵权请联系删除。  对亚马逊卖家来说，最令人担忧的时刻之一是当他们面临潜在的库存中断时。当产品真的回来时，这些断货对搜索排名会有什么影响？排名会恢复到原来的位置还是会下降？在这篇文章中，我们将研究断货对众多ASIN的影响，看看断货前后的表现，并尝试确定断货的效果。 内容 断货前后的表现  对结果的解释  为什么卖家认为库存耗尽会影响业绩？  缺货是否永远影响产">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.guansk.com/images/ASIN%E7%BC%BA%E8%B4%A7%E5%AF%B9%E4%BA%9A%E9%A9%AC%E9%80%8A%E4%BA%A7%E5%93%81%E6%8E%92%E5%90%8D%E7%9A%84%E5%BD%B1%E5%93%8D/Stock-outs-on-Amazon-with-graphs-scaled.jpg">
+<meta property="og:image" content="https://www.guansk.com/images/ASIN%E7%BC%BA%E8%B4%A7%E5%AF%B9%E4%BA%9A%E9%A9%AC%E9%80%8A%E4%BA%A7%E5%93%81%E6%8E%92%E5%90%8D%E7%9A%84%E5%BD%B1%E5%93%8D/Stock-outs-on-Amazon-with-graphs-3-scaled.jpg">
+<meta property="og:image" content="https://www.guansk.com/images/ASIN%E7%BC%BA%E8%B4%A7%E5%AF%B9%E4%BA%9A%E9%A9%AC%E9%80%8A%E4%BA%A7%E5%93%81%E6%8E%92%E5%90%8D%E7%9A%84%E5%BD%B1%E5%93%8D/Stock-outs-on-Amazon-with-graphs-2-scaled.jpg">
+<meta property="og:image" content="https://www.guansk.com/images/ASIN%E7%BC%BA%E8%B4%A7%E5%AF%B9%E4%BA%9A%E9%A9%AC%E9%80%8A%E4%BA%A7%E5%93%81%E6%8E%92%E5%90%8D%E7%9A%84%E5%BD%B1%E5%93%8D/Stock-outs-on-Amazon-with-graphs-3-scaled.jpg">
+<meta property="og:image" content="https://www.guansk.com/images/ASIN%E7%BC%BA%E8%B4%A7%E5%AF%B9%E4%BA%9A%E9%A9%AC%E9%80%8A%E4%BA%A7%E5%93%81%E6%8E%92%E5%90%8D%E7%9A%84%E5%BD%B1%E5%93%8D/Stock-outs-on-Amazon-with-graphs-4-scaled.jpg">
+<meta property="og:image" content="https://www.guansk.com/images/ASIN%E7%BC%BA%E8%B4%A7%E5%AF%B9%E4%BA%9A%E9%A9%AC%E9%80%8A%E4%BA%A7%E5%93%81%E6%8E%92%E5%90%8D%E7%9A%84%E5%BD%B1%E5%93%8D/Stock-outs-on-Amazon-with-graphs-5.jpg">
+<meta property="article:published_time" content="2022-03-23T04:26:49.000Z">
+<meta property="article:modified_time" content="2022-03-23T04:26:49.031Z">
 <meta property="article:author" content="Guansk">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.guansk.com/images/ASIN%E7%BC%BA%E8%B4%A7%E5%AF%B9%E4%BA%9A%E9%A9%AC%E9%80%8A%E4%BA%A7%E5%93%81%E6%8E%92%E5%90%8D%E7%9A%84%E5%BD%B1%E5%93%8D/Stock-outs-on-Amazon-with-graphs-scaled.jpg">
 
-<link rel="canonical" href="https://www.guansk.com/">
+<link rel="canonical" href="https://www.guansk.com/posts/34c1ae5c/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>Guansk博客</title>
+  <title>ASIN缺货对亚马逊产品排名的影响 | Guansk博客</title>
   
 
 
@@ -171,9 +182,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -189,10 +201,9 @@
       <meta itemprop="name" content="Guansk博客">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/34c1ae5c/" class="post-title-link" itemprop="url">ASIN缺货对亚马逊产品排名的影响</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          ASIN缺货对亚马逊产品排名的影响
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -236,7 +247,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <blockquote>
+        <blockquote>
 <p>翻译自Dave Bryant<a target="_blank" rel="noopener" href="https://www.ecomcrew.com/amazon-stockout-effects/">文章</a>，如侵权请联系删除。</p>
 </blockquote>
 <p>对亚马逊卖家来说，最令人担忧的时刻之一是当他们面临潜在的库存中断时。当产品真的回来时，这些断货对搜索排名会有什么影响？排名会恢复到原来的位置还是会下降？在这篇文章中，我们将研究断货对众多ASIN的影响，看看断货前后的表现，并尝试确定断货的效果。</p>
@@ -315,314 +326,56 @@
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>对于亚马逊卖家来说，缺货已经不是以前那种毁灭性的事件了。可能有例外情况，但绝大多数卖家在恢复库存后会迅速恢复产品的排名。</p>
 <p>你在缺货方面有什么经验？你最近是否曾遇到过缺货后没有恢复排名的情况？</p>
 
-      
     </div>
 
     
     
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.guansk.com/posts/69d80520/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Guansk">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Guansk博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/69d80520/" class="post-title-link" itemprop="url">如何用你的亚马逊产品图片获得更多的点击率| Helium 10</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-02-20 12:27:10 / 修改时间：16:52:07" itemprop="dateCreated datePublished" datetime="2022-02-20T12:27:10+08:00">2022-02-20</time>
-            </span>
-
-          
-            <span id="/posts/69d80520/" class="post-meta-item leancloud_visitors" data-flag-title="如何用你的亚马逊产品图片获得更多的点击率| Helium 10" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/posts/69d80520/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/69d80520/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <blockquote>
-<p>翻译自Lailama Hasan&#x2F;Helium 10<a target="_blank" rel="noopener" href="https://www.helium10.com/blog/get-clicks-with-amazon-product-images/">文章</a>，如侵权请联系删除。</p>
-</blockquote>
-<p>我们是视觉动物，这意味着我们往往是视觉购物者。亚马逊卖家如何创建能够推动点击的产品图片？</p>
-<p>传递到我们大脑的90%的信息都是视觉的，所以难怪我们大部分的判断和决定都来自于此。在电子商务中，你的视觉效果的质量将决定你在亚马逊上的成功。 </p>
-<blockquote>
-<p>“亚马逊上的人们购买照片，他们不买产品。”</p>
-<p>Perry Belcher</p>
-</blockquote>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/69d80520/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.guansk.com/posts/a49402cc/">
+    <div class="social-list">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Guansk">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Guansk博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/a49402cc/" class="post-title-link" itemprop="url">Python调用Motrix高速下载</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-02-18 19:38:53" itemprop="dateCreated datePublished" datetime="2022-02-18T19:38:53+08:00">2022-02-18</time>
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/images/wechat_channel.jpg">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-02-20 16:52:07" itemprop="dateModified" datetime="2022-02-20T16:52:07+08:00">2022-02-20</time>
-              </span>
 
-          
-            <span id="/posts/a49402cc/" class="post-meta-item leancloud_visitors" data-flag-title="Python调用Motrix高速下载" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/posts/a49402cc/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/a49402cc/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
+            <span class="label">WeChat</span>
+          </a>
         </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><a target="_blank" rel="noopener" href="https://motrix.app/zh-CN">Motrix</a>是一款开源的全能下载工具，界面简洁，方便快速，适合替代迅雷等作为日常使用的下载工具。</p>
-<p>本文记录通过Python调用Motrix下载，实现自动化高速下载。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/a49402cc/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
     </div>
+  </div>
 
-    
-    
-    
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/69d80520/" rel="prev" title="如何用你的亚马逊产品图片获得更多的点击率| Helium 10">
+      <i class="fa fa-chevron-left"></i> 如何用你的亚马逊产品图片获得更多的点击率| Helium 10
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.guansk.com/posts/3efffdad/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Guansk">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Guansk博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/3efffdad/" class="post-title-link" itemprop="url">Knitting.com 第1天 - 选择一个利基市场并为一个域名支付8万美元</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-02-17 10:38:53" itemprop="dateCreated datePublished" datetime="2022-02-17T10:38:53+08:00">2022-02-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-02-20 16:52:07" itemprop="dateModified" datetime="2022-02-20T16:52:07+08:00">2022-02-20</time>
-              </span>
-
-          
-            <span id="/posts/3efffdad/" class="post-meta-item leancloud_visitors" data-flag-title="Knitting.com 第1天 - 选择一个利基市场并为一个域名支付8万美元" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/posts/3efffdad/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/3efffdad/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <blockquote>
-<p>翻译自Dave Bryant<a target="_blank" rel="noopener" href="https://www.ecomcrew.com/knitting-com-domain-name-niche-selection/">文章</a>，如侵权请联系删除。</p>
-</blockquote>
-<p>Mike和我刚刚开始了一个全新的品牌（我们第一次直接在一个品牌上合作） , knitting.com。</p>
-<p>这将标志着我们将在未来12个月内进行的一系列博文和播客的第一篇，记录将knitting.com达成这样的目标的过程，在12个月内成为一个7位数的品牌，在5年内成为一个8位数的品牌。这将是一个类似于几年前的系列，因为我有一个关于从头开始建立Offroading Gear的系列。</p>
-<p>在这篇博文中，我将详细介绍我们如何选择我们将要进入的利基市场，以及购买域名的谈判和估价过程。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/3efffdad/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -669,6 +422,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">内容</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%AD%E8%B4%A7%E5%89%8D%E5%90%8E%E7%9A%84%E8%A1%A8%E7%8E%B0"><span class="nav-number"></span> <span class="nav-text">断货前后的表现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E6%9E%9C%E7%9A%84%E8%A7%A3%E9%87%8A"><span class="nav-number"></span> <span class="nav-text">结果的解释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8D%96%E5%AE%B6%E8%AE%A4%E4%B8%BA%E7%BC%BA%E8%B4%A7%E4%BC%9A%E5%BD%B1%E5%93%8D%E4%B8%9A%E7%BB%A9%EF%BC%9F"><span class="nav-number"></span> <span class="nav-text">为什么卖家认为缺货会影响业绩？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%BA%E8%B4%A7%E6%98%AF%E5%90%A6%E6%B0%B8%E8%BF%9C%E5%BD%B1%E5%93%8D%E4%BA%A7%E5%93%81%E8%A1%A8%E7%8E%B0%EF%BC%9F"><span class="nav-number"></span> <span class="nav-text">缺货是否永远影响产品表现？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%A0%E6%98%AF%E5%90%A6%E5%BA%94%E8%AF%A5%E6%8F%90%E9%AB%98%E4%BB%B7%E6%A0%BC%E4%BB%A5%E9%81%BF%E5%85%8D%E7%BC%BA%E8%B4%A7%EF%BC%9F"><span class="nav-number"></span> <span class="nav-text">你是否应该提高价格以避免缺货？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number"></span> <span class="nav-text">总结</span></a></div>
       </div>
       <!--/noindex-->
 
