@@ -56,13 +56,6 @@
 
   
   <url>
-    <loc>https://www.guansk.com/tags/Python/</loc>
-    <lastmod>2022-04-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.guansk.com/tags/%E7%BF%BB%E8%AF%91/</loc>
     <lastmod>2022-04-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -85,6 +78,13 @@
   
   <url>
     <loc>https://www.guansk.com/tags/Knitting-com%E7%B3%BB%E5%88%97/</loc>
+    <lastmod>2022-04-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.guansk.com/tags/Python/</loc>
     <lastmod>2022-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
