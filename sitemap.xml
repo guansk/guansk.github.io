@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.guansk.com/about/index.html</loc>
+    <loc>https://www.guansk.com/posts/1069dad0/</loc>
     
     <lastmod>2022-04-27</lastmod>
     
@@ -11,9 +11,9 @@
   </url>
   
   <url>
-    <loc>https://www.guansk.com/posts/1069dad0/</loc>
+    <loc>https://www.guansk.com/about/index.html</loc>
     
-    <lastmod>2022-04-26</lastmod>
+    <lastmod>2022-04-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
