@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.guansk.com/posts/7b9f15a7/</loc>
+    
+    <lastmod>2022-05-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.guansk.com/posts/b397d147/</loc>
     
     <lastmod>2022-05-04</lastmod>
@@ -90,34 +99,6 @@
   </url>
   
   <url>
-    <loc>https://www.guansk.com/tags/%E7%BF%BB%E8%AF%91/</loc>
-    <lastmod>2022-05-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.guansk.com/tags/%E7%8B%AC%E7%AB%8B%E7%AB%99/</loc>
-    <lastmod>2022-05-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.guansk.com/tags/EcomCrew/</loc>
-    <lastmod>2022-05-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.guansk.com/tags/Knitting-com%E7%B3%BB%E5%88%97/</loc>
-    <lastmod>2022-05-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.guansk.com/tags/Motrix/</loc>
     <lastmod>2022-05-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -147,6 +128,34 @@
   
   <url>
     <loc>https://www.guansk.com/tags/%E5%9B%BE%E7%89%87/</loc>
+    <lastmod>2022-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.guansk.com/tags/%E7%BF%BB%E8%AF%91/</loc>
+    <lastmod>2022-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.guansk.com/tags/%E7%8B%AC%E7%AB%8B%E7%AB%99/</loc>
+    <lastmod>2022-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.guansk.com/tags/EcomCrew/</loc>
+    <lastmod>2022-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.guansk.com/tags/Knitting-com%E7%B3%BB%E5%88%97/</loc>
     <lastmod>2022-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
